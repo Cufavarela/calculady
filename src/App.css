@@ -1,38 +1,74 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(207, 164, 196);
   min-height: 100vh;
+}
+
+.form {
   display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  font-size: medium;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.priceInput {
+  border: 2px solid rgb(173, 58, 145);
+  border-radius: 0;
+  font-weight: 400;
+  padding: 11px 15px;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selectInput {
+  min-width: 100px;
+  margin-bottom: 15px;
+  border: 2px solid rgb(173, 58, 145);
+  border-radius: 0;
+  font-weight: 400;
+  padding: 11px 15px;
+  line-height: normal;
+}
+
+.selectInput:focus-visible,
+.priceInput:focus-visible {
+  outline: none;
+}
+
+.button {
+  padding: 10px;
+  font-size: medium;
+  background-color: rgb(230, 136, 179);
+  color: rgb(31, 30, 31);
+}
+.button:hover {
+  background-color: rgb(209, 106, 152);
+  cursor: pointer;
+}
+.button:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.price {
+  font-weight: 600;
+  font-size: x-large;
 }
